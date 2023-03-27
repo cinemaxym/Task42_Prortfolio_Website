@@ -1,0 +1,184 @@
+<!-- Web Developer Portfolio  HTML file -->
+<!-- ABOUT PAGE -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- this part is not visible for humans  -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts link -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;600;700&family=Roboto:wght@700&family=Work+Sans:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- link to an external css file -->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>About</title>
+</head>
+
+<!-- this part is visible for humans  -->
+
+<body onload="displayComments()">
+    <!-- header block -->
+    <header>
+        <div class="header">
+            <a href="./index.html">
+                <img src="../img/logo.svg" alt="logo">
+            </a>
+            <div class="menu">
+                <a href="../index.html">
+                    <div>Home</div>
+                </a>
+                <a href="../pages/about.html">
+                    <div>About</div>
+                </a>
+                <!-- <a href="#">
+                    <div>Skills</div>
+                </a> -->
+                <!-- <a href="#">
+                    <div>Portfolio</div>
+                </a> -->
+                <a href="../pages/contact.html">
+                    <div>Contact</div>
+                </a>
+            </div>
+            <a href="../pages/save-for-later.html">
+                <div id="header-saveBtn">Save<span id="d-letter"></span> for Later <span id="saved-count"></span></div>
+            </a>
+        </div>
+    </header>
+    <!-- about block -->
+    <section>
+        <div class="about">
+            <img src="../img/KartikBansal.png" alt="Kartik Bansal">
+            <div class="text">
+                <div class="section-heading-btn">Who I am</div>
+                <div class="section-heading">About Me</div>
+                <div class="section-text">Hi! I’m Kartik Bansal, and I’m a designer & developer who has passion for
+                    building clean web
+                    applications with intuitive functionality. I enjoy the process of turning ideas into reality using
+                    creative solutions. I’m always curious about learning new skills, tools, and concepts. In addition
+                    to
+                    working on various solo full stack projects, I have worked with creative teams, which involves daily
+                    stand-ups and communications, source control, and project management.</div>
+                <!-- save for later and like block -->
+                <div class="save-block">
+                    <button class="save-btn">Save for Later</button>
+                    <div class="like-btn-background">
+                        <svg class="like-btn" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-comments">
+            <div class="add-comment-block">
+                <textarea class="comments-card" name="" id="commentTextarea" cols="" rows=""
+                    placeholder="Write something nice..."></textarea>
+                <button id="submit-comment-btn" onclick="addComment()">Submit</button>
+            </div>
+            <h3>Comments</h3>
+            <div id="comments-list">
+            </div>
+        </div>
+    </section>
+    <!-- footer block -->
+    <footer>
+        <div class="bottom">
+            <div>
+                <div>Kartik Bansal.</div>
+                <h4>Creative designer & front-end developer</h4>
+            </div>
+            <div>
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>
+                        <a href="../index.html">
+                            <p>Home</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../pages/about.html">
+                            <p>About</p>
+                        </a>
+                    </li>
+                    <li>
+                        <!-- <a href="http://">
+                            <p>Skills</p>
+                        </a> -->
+                    </li>
+                    <li>
+                        <!-- <a href="http://">
+                            <p>Portfolio</p>
+                        </a> -->
+                    </li>
+                    <li>
+                        <a href="../pages/contact.html">
+                            <p>Contact</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3>Social Media</h3>
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com" target="_blank">
+                            <p>Instagram</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/" target="_blank">
+                            <p>LinkedIn</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://dribbble.com/" target="_blank">
+                            <p>Dribbble</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.behance.net/" target="_blank">
+                            <p>Behance</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/" target="_blank">
+                            <p>GitHub</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3>Newsletter</h3>
+                <h4>Enter your email and get notified about news.</h4>
+                <div>
+                    <label for="email"></label>
+                    <input type="email" id="email" placeholder="Your E-mail address">
+                </div>
+                <form>
+                    <input type="radio" id="news" name="newsletter" value="News">
+                    <label for="news">News</label><br>
+                    <input type="radio" id="articles" name="newsletter" value="Articles">
+                    <label for="css">Articles</label><br>
+                    <input type="radio" id="cases" name="newsletter" value="Cases">
+                    <label for="caseStudies">Cases</label>
+                </form>
+                <div class="btn">
+                    <button class="submit" value="Submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type='text/javascript' src='../script/script.js'></script>
+</body>
+
+</html>

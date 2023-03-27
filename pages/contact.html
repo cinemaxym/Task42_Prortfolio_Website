@@ -1,0 +1,185 @@
+<!-- Web Developer Portfolio  HTML file -->
+<!-- CONTACT PAGE -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- this part is not visible for humans  -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts link -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;600;700&family=Roboto:wght@700&family=Work+Sans:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- link to an external css file -->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contact</title>
+</head>
+
+<!-- this part is visible for humans  -->
+
+<body onload="displayCount()">
+    <!-- header block -->
+    <header>
+        <div class="header">
+            <a href="./index.html">
+                <img src="../img/logo.svg" alt="logo">
+            </a>
+            <div class="menu">
+                <a href="../index.html">
+                    <div>Home</div>
+                </a>
+                <a href="../pages/about.html">
+                    <div>About</div>
+                </a>
+                <!-- <a href="#">
+                    <div>Skills</div>
+                </a> -->
+                <!-- <a href="#">
+                    <div>Portfolio</div>
+                </a> -->
+                <a href="../pages/contact.html">
+                    <div>Contact</div>
+                </a>
+            </div>
+            <a href="../pages/save-for-later.html">
+                <div id="header-saveBtn">Save<span id="d-letter"></span> for Later <span id="saved-count"></span></div>
+            </a>
+        </div>
+    </header>
+    <section>
+        <div class="h2">
+            <h1>Contact</h1>
+            <table>
+                <tr>
+                    <th>
+                        <h2>UK</h2>
+                    </th>
+                    <th>
+                        <h2>US</h2>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <p>42 — 44 Beak Street</p>
+                        <p>London W1F 9RH</p>
+                        <p>+44(0)20 7434 0787</p>
+                        <p>Google ↗</p>
+                    </td>
+                    <td>
+                        <p>634 N. La Peer Drive</p>
+                        <p>Los Angeles, Ca 90069</p>
+                        <p>+1(310) 659 1577</p>
+                        <p>Google ↗</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <!-- contact form -->
+    <section>
+        <div class="container-contact-form">
+            <div class="contact-form-row">
+                <input type="text" name="" id="contactName" class="contact-input-form" placeholder="Name">
+                <input type="email" name="" id="contactEmail" class="contact-input-form" placeholder="Email">
+            </div>
+            <textarea class="contact-textarea" name="" id="contactTextarea" cols="" rows="5"
+                placeholder="Write something nice..."></textarea>
+            <button id="submit-contact-btn" onclick="sendMessage()">Send</button>
+        </div>
+    </section>
+    <!-- footer block -->
+    <footer>
+        <div class="bottom">
+            <div>
+                <div>Kartik Bansal.</div>
+                <h4>Creative designer & front-end developer</h4>
+            </div>
+            <div>
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>
+                        <a href="../index.html">
+                            <p>Home</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../pages/about.html">
+                            <p>About</p>
+                        </a>
+                    </li>
+                    <li>
+                        <!-- <a href="http://">
+                            <p>Skills</p>
+                        </a> -->
+                    </li>
+                    <li>
+                        <!-- <a href="http://">
+                            <p>Portfolio</p>
+                        </a> -->
+                    </li>
+                    <li>
+                        <a href="../pages/contact.html">
+                            <p>Contact</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3>Social Media</h3>
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com" target="_blank">
+                            <p>Instagram</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/" target="_blank">
+                            <p>LinkedIn</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://dribbble.com/" target="_blank">
+                            <p>Dribbble</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.behance.net/" target="_blank">
+                            <p>Behance</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/" target="_blank">
+                            <p>GitHub</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3>Newsletter</h3>
+                <h4>Enter your email and get notified about news.</h4>
+                <div>
+                    <label for="email"></label>
+                    <input type="email" id="email" placeholder="Your E-mail address">
+                </div>
+                <form>
+                    <input type="radio" id="news" name="newsletter" value="News">
+                    <label for="news">News</label><br>
+                    <input type="radio" id="articles" name="newsletter" value="Articles">
+                    <label for="css">Articles</label><br>
+                    <input type="radio" id="cases" name="newsletter" value="Cases">
+                    <label for="caseStudies">Cases</label>
+                </form>
+                <div class="btn">
+                    <button class="submit" value="Submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type='text/javascript' src='../script/script.js'></script>
+</body>
+
+</html>

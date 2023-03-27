@@ -1,0 +1,727 @@
+/* Web Developer Portfolio CSS file */
+
+:root {
+    --color-black: #292B2E;
+    --p: 30px;
+    --orange: #FFB742;
+    --white: #FFFFFF;
+}
+
+/* styling of body */
+body {
+    background: #212529;
+}
+
+/* styling of header */
+.header {
+    width: 100%;
+    height: 66px;
+    background-color: #212529;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    box-sizing: border-box;
+}
+
+/* styling of header menu */
+.menu {
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: auto;
+}
+
+/* styling of anchor */
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+/* styling of anchor hover */
+a:hover {
+    color: var(--orange);
+}
+
+/* styling of header Save for Later button */
+.header div#header-saveBtn {
+    padding: 10px 20px;
+    border: 2px solid #FFB742;
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: var(--orange);
+    color: #212529;
+}
+
+/* styling of Save for Later button span */
+#saved-count {
+    /* display: inline-block;
+    border: 1px solid red; */
+    border-radius: 50%;
+    /* background-color: red; */
+    color: white;
+    box-sizing: border-box;
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+/* styling of h1 */
+h1 {
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 91px;
+}
+
+/* styling of h2 */
+h2 {
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 51px;
+}
+
+/* styling of h3 */
+h3 {
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 51px;
+}
+
+
+/* styling of heading block */
+.h2 {
+    text-align: center;
+    margin-top: 108px;
+    margin-bottom: 136.27px;
+}
+
+
+/* styling of span in heading block */
+.h2>h2 span {
+    color: var(--orange);
+    text-decoration-line: underline;
+}
+
+/* styling of cards block */
+.cards {
+    display: flex;
+    justify-content: space-between;
+    width: 91%;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+/* styling of a card in cards block */
+.card {
+    width: 32%;
+    background-color: #292B2E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: calc(var(--p) - 5px) var(--p);
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* additional styling of a card in cards block */
+.card-content>div:first-child {
+    color: var(--orange);
+    font-size: 32px;
+    line-height: 40px;
+}
+
+/* additional styling of a card in cards block */
+.card-content>div:last-child {
+    color: var(--white);
+    font-size: 16px;
+    line-height: 31px;
+}
+
+/* styling of a card hover in cards block */
+.card:hover {
+    background: linear-gradient(94.3deg, #FFB742 0%, rgba(255, 123, 66, 0.76) 99.33%);
+}
+
+/* additional styling of a card hover in cards block */
+.card:hover .card-content>div:first-child {
+    color: #212529;
+}
+
+/* additional styling of a card hover in cards block */
+.card:hover .card-content>div:last-child {
+    color: #212529;
+}
+
+
+/* styling of about block */
+.about {
+    display: flex;
+    width: 97%;
+    margin-top: 221.4px;
+    justify-content: space-between;
+}
+
+/* styling of a text block in about block */
+.text {
+    font-family: 'Poppins';
+    width: 50%;
+}
+
+/* styling of heading section button */
+.section-heading-btn {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--orange);
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 50px;
+    width: fit-content;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* styling of section heading */
+.section-heading {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+/* styling of section text block */
+.section-text {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #D4D4D4;
+    margin-top: 29.49px;
+}
+
+/* styling of save for later button */
+.save-btn {
+    border: 2px solid #FFB742;
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: var(--orange);
+    color: #212529;
+    margin-top: 54.45px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* styling of skills block */
+.skills {
+    margin-top: 17.93px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* styling of text block in skills block */
+.skills .text {
+    width: 50%;
+}
+
+/* styling icons block in skills block */
+.icons {
+    display: flex;
+    max-width: 560px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+/* styling icons in icons block */
+.icons>div {
+    background: #383E45;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+/* styling icons hover in icons block */
+.icons>div:hover {
+    background: #ffb74282;
+}
+
+/* styling works block */
+.works {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 136.71px;
+
+}
+
+/* styling works block menu */
+.works-menu {
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin-top: 30px;
+    border-radius: 3px;
+}
+
+/* styling works block menu elements */
+.works-menu>div {
+    border-radius: 3px;
+    color: #212529;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+}
+
+/* styling works block menu elements hover*/
+.works-menu>div:hover {
+    background: #FFB742;
+    border-radius: 3px;
+    color: #212529;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px;
+    box-sizing: border-box;
+}
+
+/* styling works-thumbs block */
+.works-thumbs {
+    margin-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 143.59px;
+}
+
+/* styling works-thumbs block columns */
+.works-thumbs>div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+}
+
+/* styling works-thumbs block columns */
+.works-thumbs>div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+}
+
+/* styling works-thumbs block columns */
+.works-thumbs>div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+}
+
+/* styling works-thumbs image */
+.works-thumbs img {
+    margin: 15px;
+    width: 90%;
+}
+
+/* styling of testimonials block*/
+.testimonials {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* styling of testimonials cards block */
+.client-cards {
+    width: 94%;
+    margin-top: 90.29px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* styling of testimonials card */
+.client-card {
+    width: 32%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+    color: #000000;
+}
+
+/* styling of testimonial card author block */
+div.testimomials-card-block {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+/* additional styling of testimonial card author block */
+div.testimomials-card-block>div:first-child {
+    margin-right: 20px;
+}
+
+/* styling of testimonial card author block image */
+div.testimomials-card-block>img {
+    display: block;
+    width: 100%;
+}
+
+/* styling of testimonial card author block h4 */
+div.testimomials-card-block h4 {
+    margin: 0;
+}
+
+/* styling of testimonial card author block p */
+div.testimomials-card-block p {
+    margin: 0;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 34px;
+}
+
+/* styling of bottom block */
+.bottom {
+    width: 100%;
+    background: #1C1C1C;
+    margin-top: 253.15px;
+    display: flex;
+    justify-content: space-around;
+    padding: 148px 48px 90px;
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 36px;
+    color: #7B7B7B;
+}
+
+/* styling of ul */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* styling of bottom anchors */
+.bottom a {
+    color: #7B7B7B;
+}
+
+/* styling of bottom anchors hover */
+.bottom a:hover {
+    color: var(--orange);
+}
+
+/* styling of bottom columns */
+.bottom>div {
+    width: 22%;
+}
+
+/* styling of bottom columns headings */
+.bottom>div:first-child>div:first-child {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    color: var(--orange);
+    margin-bottom: 30.62px;
+}
+
+/* styling of bottom h3 */
+.bottom h3 {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21.5865px;
+    line-height: 32px;
+    color: #F5FBF2;
+    margin-top: 0;
+    margin-bottom: 13.13px;
+}
+
+/* styling of bottom h4 */
+.bottom h4 {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 32px;
+    color: #D4D4D4;
+    margin: 0;
+}
+
+/* styling of bottom hover */
+.bottom>p:hover {
+    color: var(--orange);
+}
+
+/* additional styling of bottom p */
+.bottom p {
+    margin: 0;
+}
+
+/* styling of submit form */
+#email {
+    width: 85%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 5px;
+    margin-top: 15px;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #7B7B7B;
+
+}
+
+/* styling of submit button */
+.submit {
+    background-color: var(--orange);
+    padding: 5px;
+    margin-top: 15px;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #212529;
+}
+
+/* styling of form */
+form {
+    margin-top: 15px;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 32px;
+    color: #D4D4D4;
+    margin-top: 15px;
+}
+
+/* additional styling of contact page */
+/* styling of contacts table */
+table {
+    margin: auto;
+    width: 30%;
+}
+
+/* styling of contacts table p */
+table p {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    color: #7B7B7B;
+}
+
+/* styling container contact form */
+.container-contact-form {
+    width: 50%;
+    margin: auto;
+}
+
+/* styling contact form block block */
+.contact-form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* styling contact textarea */
+.contact-textarea {
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #000000;
+    overflow-wrap: break-word;
+}
+
+/* styling contact input */
+.contact-input-form {
+    width: 49%;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #000000;
+    overflow-wrap: break-word;
+}
+
+/* styling contact buttton */
+#submit-contact-btn {
+    border: 2px solid #FFB742;
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: var(--orange);
+    color: #212529;
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* additional styling for save for later page */
+.container-saved-for-later {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+}
+
+.container-saved-for-later h1 {
+    text-align: center;
+}
+
+.container-saved-for-later table {
+    width: 80%;
+}
+
+.saved-for-later-card {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #000000;
+}
+
+/* additional styling for save for about page */
+/* styling container comments */
+.container-comments {
+    width: 80%;
+    margin: auto;
+}
+
+/* styling add comment block */
+.add-comment-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* styling comments card */
+.comments-card {
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #000000;
+    overflow-wrap: break-word;
+}
+
+/* styling submit buttton */
+#submit-comment-btn {
+    border: 2px solid #FFB742;
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: var(--orange);
+    color: #212529;
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+/* styling save block */
+.save-block {
+    display: flex;
+    align-items:flex-end;
+}
+
+/* styling like btn */
+.like-btn {
+    fill: white;
+}
+
+/* styling like btn toggle */
+.like-btn-toggle {
+    fill: red;
+}
+
+/* styling like btn background */
+.like-btn-background{
+    background: #383E45;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
